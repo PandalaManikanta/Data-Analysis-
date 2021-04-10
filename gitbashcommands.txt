@@ -1,0 +1,103 @@
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/Desktop/data analysis workshop/.git/
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ ls
+Untitled.ipynb  mani.txt   number.txt  totalmarks.txt
+data.txt        marks.txt  total.txt
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git config user.name "PandalaManikanta"
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git config user.email "Pandalamani11@gmail.com"
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git branch
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git remote add origin "https://github.com/PandalaManikanta/Data-Analysis-.git"
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git remote
+origin
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git remote -v
+origin  https://github.com/PandalaManikanta/Data-Analysis-.git (fetch)
+origin  https://github.com/PandalaManikanta/Data-Analysis-.git (push)
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .ipynb_checkpoints/
+        Untitled.ipynb
+        data.txt
+        mani.txt
+        marks.txt
+        number.txt
+        total.txt
+        totalmarks.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git add data.txt
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git add .
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/Untitled-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Untitled.ipynb.
+The file will have its original line endings in your working directory
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .ipynb_checkpoints/Untitled-checkpoint.ipynb
+        new file:   Untitled.ipynb
+        new file:   data.txt
+        new file:   mani.txt
+        new file:   marks.txt
+        new file:   number.txt
+        new file:   total.txt
+        new file:   totalmarks.txt
+
+
+Administrator@DESKTOP-DCN91ES MINGW64 ~/Desktop/data analysis workshop (master)
+$ git commit -m "first commit"
+[master (root-commit) 44c281a] first commit
+ 8 files changed, 2017 insertions(+)
+ create mode 100644 .ipynb_checkpoints/Untitled-checkpoint.ipynb
+ create mode 100644 Untitled.ipynb
+ create mode 100644 data.txt
+ create mode 100644 mani.txt
+ create mode 100644 marks.txt
+ create mode 100644 number.txt
+ create mode 100644 total.txt
+ create mode 100644 totalmarks.txt
+
+
+$ git push origin master
+fatal: Missing 'state' in response.
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (11/11), 10.23 KiB | 5.11 MiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/PandalaManikanta/Data-Analysis-.git
+ * [new branch]      master -> master
+
